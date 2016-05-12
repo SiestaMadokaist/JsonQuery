@@ -1,4 +1,6 @@
-{
+# JsonQuery
+given the example json as:
+```{
   "reference": [
     {
       "category":"exercise",
@@ -46,3 +48,14 @@
     }
   ]
 }
+```
+you can
+```
+nh = NestedHash.new(my_json)
+nh.ls("*")
+>>> ["profile", "reference", "category"]
+nh.ls("*/*/category")
+>>> ["reference/0/category", "reference/1/category", "program/0/category", "program/1/category"]
+```
+
+though, this only support if the object of an array, is similar
