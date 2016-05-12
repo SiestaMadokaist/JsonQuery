@@ -1,6 +1,7 @@
 # JsonQuery
 given the example json as:
-```{
+```
+{
   "reference": [
     {
       "category":"exercise",
